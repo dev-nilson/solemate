@@ -18,7 +18,11 @@ export default function StackNavigator() {
             component={HomeScreen}
             options={{ headerShown: false }}
           />
-          <Stack.Screen name="Chat" component={ChatScreen} />
+          <Stack.Screen
+            name="Chat"
+            component={ChatScreen}
+            options={{ headerShown: false }}
+          />
         </>
       ) : (
         <Stack.Screen
