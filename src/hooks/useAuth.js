@@ -4,7 +4,7 @@ const AuthContext = createContext({});
 
 export function AuthProvider({ children }) {
   return (
-    <AuthContext.Provider value={{ user: null }}>
+    <AuthContext.Provider value={{ user: "devnilson" }}>
       {children}
     </AuthContext.Provider>
   );
