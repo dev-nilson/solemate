@@ -1,6 +1,6 @@
 import { View, TouchableOpacity, Image } from "react-native";
-import tw from "twrnc";
 import { Icon } from "@rneui/themed";
+import tw from "twrnc";
 
 export default function Header() {
   return (
