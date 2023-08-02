@@ -1,5 +1,6 @@
 import { View, TouchableOpacity, Image } from "react-native";
 import tw from "twrnc";
+import { Icon } from "@rneui/themed";
 
 export default function Header() {
   return (
@@ -17,6 +18,9 @@ export default function Header() {
           style={tw`h-10 w-10 rounded-full`}
           source={require("../../assets/logo.png")}
         />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Icon name="rowing" />
       </TouchableOpacity>
     </View>
   );
