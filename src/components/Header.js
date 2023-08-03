@@ -7,7 +7,7 @@ export default function Header() {
     <View style={tw`h-12 px-3 flex-row justify-between items-center`}>
       <TouchableOpacity>
         <Image
-          style={tw`h-10 w-10 rounded-full`}
+          style={tw`h-10 w-10 rounded-lg`}
           source={{
             uri: "https://avatarairlines.com/wp-content/uploads/2020/05/Male-placeholder-1.jpeg",
           }}
