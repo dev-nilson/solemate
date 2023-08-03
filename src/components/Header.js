@@ -19,6 +19,9 @@ export default function Header() {
           source={require("../../assets/logo.png")}
         />
       </TouchableOpacity>
+      <TouchableOpacity>
+        <Icon name="chat-bubble" />
+      </TouchableOpacity>
     </View>
   );
 }
