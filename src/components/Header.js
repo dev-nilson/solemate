@@ -4,7 +4,7 @@ import tw from "twrnc";
 
 export default function Header() {
   return (
-    <View style={tw`bg-green-200 h-12 px-3 flex-row justify-between items-center`}>
+    <View style={tw`h-12 px-3 flex-row justify-between items-center`}>
       <TouchableOpacity>
         <Image
           style={tw`h-10 w-10 rounded-full`}
