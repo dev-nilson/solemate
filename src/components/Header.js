@@ -1,8 +1,11 @@
+import { useNavigation } from "@react-navigation/native";
 import { View, TouchableOpacity, Image } from "react-native";
 import { Icon } from "@rneui/themed";
 import tw from "twrnc";
 
 export default function Header() {
+  const navigation = useNavigation();
+
   return (
     <View style={tw`h-12 px-3 flex-row justify-between items-center`}>
       <TouchableOpacity>
@@ -19,7 +22,7 @@ export default function Header() {
           source={require("../../assets/logo.png")}
         />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Chat")}>
         <Icon name="chat-bubble" />
       </TouchableOpacity>
     </View>
