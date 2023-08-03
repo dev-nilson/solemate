@@ -4,7 +4,7 @@ import tw from "twrnc";
 
 export default function Header() {
   return (
-    <View style={tw`bg-green-200 flex-row justify-between`}>
+    <View style={tw`bg-green-200 h-12 px-3 flex-row justify-between items-center`}>
       <TouchableOpacity>
         <Image
           style={tw`h-10 w-10 rounded-full`}
@@ -18,9 +18,6 @@ export default function Header() {
           style={tw`h-10 w-10 rounded-full`}
           source={require("../../assets/logo.png")}
         />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Icon name="rowing" />
       </TouchableOpacity>
     </View>
   );
