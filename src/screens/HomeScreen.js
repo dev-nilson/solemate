@@ -15,9 +15,16 @@ export default function HomeScreen() {
         <Swiper
           backgroundColor="#ddd"
           cards={data}
+          stackSize={5}
+          cardIndex={0}
+          verticalSwipe={false}
+          animateCardOpacity
           renderCard={(card) => (
             <View key={card.id} style={tw`bg-white relative h-3/4 rounded-xl`}>
-              <Image style={tw`absolute top-0 h-full w-full rounded-xl`} source={{ uri: card.image }} />
+              <Image
+                style={tw`absolute top-0 h-full w-full rounded-xl`}
+                source={{ uri: card.image }}
+              />
               <Text>{card.name}</Text>
             </View>
           )}
