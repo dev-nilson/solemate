@@ -13,10 +13,10 @@ export default function HomeScreen() {
       <Header />
       <View style={tw`flex-1`}>
         <Swiper
-          backgroundColor="#000"
+          backgroundColor="#ddd"
           cards={data}
           renderCard={(card) => (
-            <View key={card.id} style={tw`bg-white h-3/4 rounded-xl`}>
+            <View key={card.id} style={tw`bg-white relative h-3/4 rounded-xl`}>
               <Text>{card.name}</Text>
             </View>
           )}

@@ -7,7 +7,7 @@ export default function Header() {
   const navigation = useNavigation();
 
   return (
-    <View style={tw`h-12 px-3 flex-row justify-between items-center`}>
+    <View style={tw`h-12 px-3 flex-row justify-between items-center bg-[#ddd]`}>
       <TouchableOpacity>
         <Image
           style={tw`h-10 w-10 rounded-lg`}
