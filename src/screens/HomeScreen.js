@@ -25,7 +25,10 @@ export default function HomeScreen() {
                 style={tw`absolute top-0 h-full w-full rounded-xl`}
                 source={{ uri: card.image }}
               />
-              <Text>{card.name}</Text>
+              <View>
+                <Text>{card.name}</Text>
+                <Text>{card.age}</Text>
+              </View>
             </View>
           )}
         />
