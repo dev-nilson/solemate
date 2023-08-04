@@ -28,8 +28,8 @@ export default function HomeScreen() {
               <View
                 style={tw`absolute bottom-0 bg-white w-full h-20 justify-between items-center flex-row px-6 py-3 rounded-b-xl`}
               >
-                <Text>{card.name}</Text>
-                <Text>{card.age}</Text>
+                <Text style={tw`text-2xl font-bold`}>{card.name}</Text>
+                <Text style={tw`text-xl font-semibold`}>{card.age}</Text>
               </View>
             </View>
           )}
