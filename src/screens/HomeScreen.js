@@ -1,13 +1,27 @@
-import { SafeAreaView } from "react-native";
+import tw from "twrnc";
+import { SafeAreaView, View, Text } from "react-native";
+import { data } from "../utils/data";
 import Constants from "expo-constants";
-import Header from "../components/Header";
 import Swiper from "react-native-deck-swiper";
+import Header from "../components/Header";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={{ marginTop: Constants.statusBarHeight + 10 }}>
+    <SafeAreaView
+      style={{ marginTop: Constants.statusBarHeight + 10, flex: 1 }}
+    >
       <Header />
-      <Swiper />
+      <View style={tw`flex-1`}>
+        <Swiper
+          backgroundColor="#000"
+          cards={data}
+          renderCard={(card) => (
+            <View key={card.id} style={tw`bg-white h-3/4 rounded-xl`}>
+              <Text>{card.name}</Text>
+            </View>
+          )}
+        />
+      </View>
     </SafeAreaView>
   );
 }
