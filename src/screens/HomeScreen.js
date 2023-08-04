@@ -1,5 +1,5 @@
 import tw from "twrnc";
-import { SafeAreaView, View, Text } from "react-native";
+import { SafeAreaView, View, Text, Image } from "react-native";
 import { data } from "../utils/data";
 import Constants from "expo-constants";
 import Swiper from "react-native-deck-swiper";
@@ -17,6 +17,7 @@ export default function HomeScreen() {
           cards={data}
           renderCard={(card) => (
             <View key={card.id} style={tw`bg-white relative h-3/4 rounded-xl`}>
+              <Image style={tw`absolute top-0 h-full w-full rounded-xl`} source={{ uri: card.image }} />
               <Text>{card.name}</Text>
             </View>
           )}
