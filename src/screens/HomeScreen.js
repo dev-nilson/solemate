@@ -72,10 +72,10 @@ export default function HomeScreen() {
         />
       </View>
       <View style={tw`flex flex-row justify-evenly bg-[#ddd]`}>
-        <TouchableOpacity style={tw`items-center justify-center rounded-full w-20 h-20 bg-red-200`}>
+        <TouchableOpacity onPress={() => swipeRef.current.swipeLeft()} style={tw`items-center justify-center rounded-full w-20 h-20 bg-red-200`}>
           <Icon name="clear" size={36} color={"#7f1d1d"}/>
         </TouchableOpacity>
-        <TouchableOpacity style={tw`items-center justify-center rounded-full w-20 h-20 bg-green-200`}> 
+        <TouchableOpacity onPress={() => swipeRef.current.swipeRight( )} style={tw`items-center justify-center rounded-full w-20 h-20 bg-green-200`}> 
           <Icon name="favorite" size={36} color={"#14532d"} />
         </TouchableOpacity>
       </View>
