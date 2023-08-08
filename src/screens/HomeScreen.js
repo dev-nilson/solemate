@@ -1,11 +1,22 @@
-import tw from "twrnc";
-import { SafeAreaView, View, Text, Image, StyleSheet } from "react-native";
+import { useRef } from "react";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import { data } from "../utils/data";
+import { Icon } from "@rneui/themed";
+import tw from "twrnc";
 import Constants from "expo-constants";
 import Swiper from "react-native-deck-swiper";
 import Header from "../components/Header";
 
 export default function HomeScreen() {
+  const swipeRef = useRef(null);
+
   return (
     <SafeAreaView
       style={{ marginTop: Constants.statusBarHeight + 10, flex: 1 }}
@@ -13,6 +24,7 @@ export default function HomeScreen() {
       <Header />
       <View style={tw`flex-1`}>
         <Swiper
+          ref={swipeRef}
           backgroundColor="#ddd"
           cards={data}
           stackSize={5}
@@ -58,6 +70,14 @@ export default function HomeScreen() {
             </View>
           )}
         />
+      </View>
+      <View style={tw`flex flex-row justify-evenly`}>
+        <TouchableOpacity>
+          <Icon name="clear" />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Icon name="favorite" />
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
