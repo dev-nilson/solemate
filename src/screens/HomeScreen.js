@@ -19,6 +19,8 @@ export default function HomeScreen() {
           cardIndex={0}
           verticalSwipe={false}
           animateCardOpacity
+          onSwipedLeft={() => console.log("LEFT")}
+          onSwipedRight={() => console.log("RIGHT")}
           overlayLabels={{
             left: {
               title: "NOPE",
