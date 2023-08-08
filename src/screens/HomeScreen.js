@@ -19,6 +19,25 @@ export default function HomeScreen() {
           cardIndex={0}
           verticalSwipe={false}
           animateCardOpacity
+          overlayLabels={{
+            left: {
+              title: "NOPE",
+              style: {
+                label: {
+                  textAlign: "right",
+                  color: "red",
+                },
+              },
+            },
+            right: {
+              title: "MATCH",
+              style: {
+                label: {
+                  color: "green",
+                },
+              },
+            },
+          }}
           renderCard={(card) => (
             <View key={card.id} style={tw`bg-white relative h-3/4 rounded-xl`}>
               <Image
