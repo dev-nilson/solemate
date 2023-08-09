@@ -16,7 +16,7 @@ export default function Header() {
           }}
         />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Modal")}>
         <Image
           style={tw`h-10 w-10 rounded-full`}
           source={require("../../assets/logo.png")}
