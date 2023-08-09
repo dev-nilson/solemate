@@ -4,7 +4,7 @@ import tw from "twrnc";
 
 export default function Controls({ swipeLeft, swipeRight }) {
   return (
-    <View style={tw`flex flex-row justify-evenly bg-[#ddd]`}>
+    <View style={tw`flex flex-row justify-evenly bg-[#ddd] pb-6`}>
       <TouchableOpacity
         onPress={swipeLeft}
         style={tw`items-center justify-center rounded-full w-20 h-20 bg-red-200`}
