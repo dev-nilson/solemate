@@ -1,4 +1,4 @@
-import { Text, TextInput, View } from "react-native";
+import { Text, TextInput, View, TouchableHighlight } from "react-native";
 import tw from "twrnc";
 import Constants from "expo-constants";
 
@@ -17,7 +17,16 @@ export default function ModalScreen() {
       <Text style={tw`text-rose-500 p-4 font-bold`}>Step 2: Enter model</Text>
       <TextInput style={tw`text-center text-lg pb-2`} placeholder="Model" />
       <Text style={tw`text-rose-500 p-4 font-bold`}>Step 3: Enter size</Text>
-      <TextInput keyboardType="numeric" style={tw`text-center text-lg pb-2`} placeholder="Size" />
+      <TextInput
+        style={tw`text-center text-lg pb-2`}
+        keyboardType="numeric"
+        placeholder="Size"
+      />
+      <TouchableHighlight
+        style={tw`w-54 p-3 rounded-lg absolute bottom-0 bg-rose-500`}
+      >
+        <Text style={tw`text-center text-white font-bold text-lg`}>Submit</Text>
+      </TouchableHighlight>
     </View>
   );
 }
