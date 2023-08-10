@@ -43,7 +43,10 @@ export default function ModalScreen() {
       />
       <TouchableOpacity
         disabled={isIncomplete}
-        style={tw`w-54 p-3 rounded-lg absolute bottom-0 bg-rose-500`}
+        style={[
+          tw`w-54 p-3 rounded-lg absolute bottom-0 `,
+          isIncomplete ? tw`bg-gray-400` : tw`bg-rose-500`,
+        ]}
       >
         <Text style={tw`text-center text-white font-bold text-lg`}>Submit</Text>
       </TouchableOpacity>
