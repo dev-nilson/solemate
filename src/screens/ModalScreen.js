@@ -25,6 +25,7 @@ export default function ModalScreen() {
         placeholder="Brand"
         value={brand}
         onChange={(text) => setBrand(text)}
+        maxLength={25}
       />
       <Text style={tw`text-rose-500 p-4 font-bold`}>Step 2: Enter model</Text>
       <TextInput
@@ -32,6 +33,7 @@ export default function ModalScreen() {
         placeholder="Model"
         value={model}
         onChange={(text) => setModel(text)}
+        maxLength={25}
       />
       <Text style={tw`text-rose-500 p-4 font-bold`}>Step 3: Enter size</Text>
       <TextInput
@@ -40,6 +42,7 @@ export default function ModalScreen() {
         placeholder="Size"
         value={size}
         onChange={(text) => setSize(text)}
+        maxLength={2}
       />
       <TouchableOpacity
         disabled={isIncomplete}
