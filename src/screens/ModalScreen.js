@@ -8,6 +8,8 @@ export default function ModalScreen() {
   const [model, setModel] = useState();
   const [size, setSize] = useState();
 
+  const isIncomplete = !brand || !model || !size;
+
   return (
     <View style={tw`flex-1 items-center`}>
       <Text
@@ -40,6 +42,7 @@ export default function ModalScreen() {
         onChange={(text) => setSize(text)}
       />
       <TouchableOpacity
+        disabled={isIncomplete}
         style={tw`w-54 p-3 rounded-lg absolute bottom-0 bg-rose-500`}
       >
         <Text style={tw`text-center text-white font-bold text-lg`}>Submit</Text>
