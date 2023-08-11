@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <View style={tw`h-12 px-3 flex-row justify-between items-center bg-[#ddd]`}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Match")}>
         <Image
           style={tw`h-10 w-10 rounded-lg`}
           source={{
