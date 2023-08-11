@@ -17,10 +17,7 @@ export default function Header() {
         />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Modal")}>
-        <Image
-          style={tw`h-10 w-10 rounded-full`}
-          source={require("../../assets/logo.png")}
-        />
+        
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Chat")}>
         <Icon name="chat-bubble" color={"#f43f5e"} />
