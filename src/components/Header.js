@@ -20,7 +20,7 @@ export default function Header() {
         
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Chat")}>
-        <Icon name="chat-bubble" color={"#f43f5e"} />
+        <Icon name="chat-bubble" color={"#f43f5e"} size={36} />
       </TouchableOpacity>
     </View>
   );
