@@ -10,7 +10,7 @@ export default function Form() {
   const isIncomplete = !brand || !model || !size;
 
   return (
-    <View>
+    <View style={tw`flex-1 items-center`}>
       <View style={tw`mt-10`}>
         <Text style={tw`text-rose-500 p-4 font-bold`}>Step 1: Enter brand</Text>
         <TextInput
