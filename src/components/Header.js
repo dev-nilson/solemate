@@ -17,10 +17,10 @@ export default function Header() {
         />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Modal")}>
-        
+        <Icon name="local-fire-department" color={"#555"} size={36} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Chat")}>
-        <Icon name="chat-bubble" color={"#f43f5e"} size={36} />
+        <Icon name="chat-bubble" color={"#555"} size={36} />
       </TouchableOpacity>
     </View>
   );
