@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import tw from "twrnc";
 
 export default function MatchScreen() {
@@ -21,6 +21,9 @@ export default function MatchScreen() {
           }}
         />
       </View>
+      <TouchableOpacity style={tw`bg-white m-10 p-3 rounded-full`}>
+        <Text style={tw`text-center text-rose-500 font-bold text-lg`}>Send a Message</Text>
+      </TouchableOpacity>
     </View>
   );
 }
