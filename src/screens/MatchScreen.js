@@ -1,7 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import tw from "twrnc";
 
 export default function MatchScreen() {
+  const navigation = useNavigation();
+
   return (
     <View style={[tw`h-full bg-rose-500 pt-20`, { opacity: 0.9 }]}>
       <Text style={tw`text-white text-center mt-5 text-lg`}>
@@ -21,8 +24,13 @@ export default function MatchScreen() {
           }}
         />
       </View>
-      <TouchableOpacity style={tw`bg-white m-10 p-3 rounded-full`}>
-        <Text style={tw`text-center text-rose-500 font-bold text-lg`}>Send a Message</Text>
+      <TouchableOpacity
+        style={tw`bg-white m-10 p-3 rounded-full`}
+        onPress={() => navigation.navigate("Chat")}
+      >
+        <Text style={tw`text-center text-rose-500 font-bold text-lg`}>
+          Send a Message
+        </Text>
       </TouchableOpacity>
     </View>
   );
