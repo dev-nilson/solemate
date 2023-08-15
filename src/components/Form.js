@@ -41,7 +41,7 @@ export default function Form() {
       <TouchableOpacity
         disabled={isIncomplete}
         style={[
-          tw`w-54 p-3 rounded-lg absolute bottom-10 `,
+          tw`w-54 p-3 rounded-full absolute bottom-10 `,
           isIncomplete ? tw`bg-gray-400` : tw`bg-rose-500`,
         ]}
       >
