@@ -10,7 +10,7 @@ export default function Card({ card }) {
       />
       <View
         style={[
-          tw`absolute bottom-0 bg-white w-full h-20 justify-between items-center flex-row px-6 py-3 rounded-b-xl`,
+          tw`absolute bottom-0 bg-white w-full h-24 justify-between items-center flex-row px-6 py-3 rounded-b-xl`,
           styles.cardShadow,
         ]}
       >
