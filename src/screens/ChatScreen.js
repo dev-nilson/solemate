@@ -1,10 +1,11 @@
-import { Text, View } from "react-native";
+import { Text, SafeAreaView, View } from "react-native";
 import tw from "twrnc";
+import Topbar from "../components/Topbar";
 
 export default function ChatScreen() {
   return (
-    <View style={tw`flex-1 justify-center items-center`}>
-      <Text>App</Text>
-    </View>
+    <SafeAreaView style={tw`flex-1`}>
+      <Topbar />
+    </SafeAreaView>
   );
 }
