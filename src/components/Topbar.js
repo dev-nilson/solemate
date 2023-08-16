@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 
-export default function Topbar() {
+export default function Topbar({ title }) {
   return (
     <View>
-      <Text>Topbar</Text>
+      <Text>{title}</Text>
     </View>
   );
 }
