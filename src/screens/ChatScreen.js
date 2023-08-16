@@ -1,10 +1,12 @@
 import { SafeAreaView } from "react-native";
-import tw from "twrnc";
+import Constants from "expo-constants";
 import Topbar from "../components/Topbar";
 
 export default function ChatScreen() {
   return (
-    <SafeAreaView style={tw`flex-1`}>
+    <SafeAreaView
+      style={{ marginTop: Constants.statusBarHeight + 10, flex: 1 }}
+    >
       <Topbar title={"Chat"} />
     </SafeAreaView>
   );
