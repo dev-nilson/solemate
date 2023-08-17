@@ -8,7 +8,7 @@ export default function ChatScreen() {
     <SafeAreaView
       style={{ marginTop: Constants.statusBarHeight + 10, flex: 1 }}
     >
-      <Topbar title={"Chat"} showActions />
+      <Topbar title={"Chat"} />
       <ChatList />
     </SafeAreaView>
   );

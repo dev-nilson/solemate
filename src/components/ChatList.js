@@ -1,10 +1,15 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { FlatList, View, Text } from "react-native";
+import { data } from "../utils/data";
+import tw from "twrnc";
 
 export default function ChatList() {
-  return (
-    <View>
-      <Text>ChatList</Text>
-    </View>
-  )
+  return data.length > 0 ? (
+    <FlatList
+      data={data}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => <Text>{item.name}</Text>}
+    />
+  ) : (
+    <View></View>
+  );
 }
