@@ -8,7 +8,7 @@ export default function ChatList() {
     <FlatList
       data={data}
       keyExtractor={(item) => item.id}
-      renderItem={({ item }) => <ChatCard />}
+      renderItem={({ item }) => <ChatCard item={item} />}
     />
   ) : (
     <View style={tw`flex-1 items-center mt-6`}>

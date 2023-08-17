@@ -1,9 +1,10 @@
-import { View, Text } from "react-native";
+import { TouchableOpacity, Text, Image } from "react-native";
 
-export default function ChatCard() {
+export default function ChatCard({ item }) {
   return (
-    <View>
-      <Text>ChatCard</Text>
-    </View>
+    <TouchableOpacity>
+      <Image source={{ uri: item.image }} />
+      <Text>{item.name}</Text>
+    </TouchableOpacity>
   );
 }
