@@ -1,5 +1,6 @@
 import { FlatList, View, Text } from "react-native";
 import { data } from "../utils/data";
+import ChatCard from "./ChatCard";
 import tw from "twrnc";
 
 export default function ChatList() {
@@ -7,7 +8,7 @@ export default function ChatList() {
     <FlatList
       data={data}
       keyExtractor={(item) => item.id}
-      renderItem={({ item }) => <Text>{item.name}</Text>}
+      renderItem={({ item }) => <ChatCard />}
     />
   ) : (
     <View style={tw`flex-1 items-center mt-6`}>
