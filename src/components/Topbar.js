@@ -16,7 +16,7 @@ export default function Topbar({ title, showActions }) {
       </View>
       {showActions && (
         <View>
-          <TouchableOpacity>
+          <TouchableOpacity style={tw`bg-gray-200 p-3 rounded-full`}>
             <Icon name="phone" color={"#000"} size={36} />
           </TouchableOpacity>
         </View>
