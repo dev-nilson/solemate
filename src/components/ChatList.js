@@ -10,6 +10,8 @@ export default function ChatList() {
       renderItem={({ item }) => <Text>{item.name}</Text>}
     />
   ) : (
-    <View></View>
+    <View style={tw`flex-1 items-center mt-6`}>
+      <Text style={tw`text-xl font-semibold text-gray-400`}>No matches</Text>
+    </View>
   );
 }
